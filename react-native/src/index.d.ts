@@ -1,4 +1,4 @@
-declare module 'ffmpeg-kit-react-native' {
+declare module '@my-groove/ffmpeg-kit-react-native' {
 
   export abstract class AbstractSession implements Session {
 
@@ -30,7 +30,7 @@ declare module 'ffmpeg-kit-react-native' {
 
     getCommand(): string;
 
-    getAllLogs(waitTimeout ?: number): Promise<Array<Log>>;
+    getAllLogs(waitTimeout?: number): Promise<Array<Log>>;
 
     getLogs(): Promise<Array<Log>>;
 
@@ -435,7 +435,7 @@ declare module 'ffmpeg-kit-react-native' {
 
     getCommand(): String;
 
-    getAllLogs(waitTimeout ?: number): Promise<Array<Log>>;
+    getAllLogs(waitTimeout?: number): Promise<Array<Log>>;
 
     getLogs(): Promise<Array<Log>>;
 
