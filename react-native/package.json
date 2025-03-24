@@ -18,15 +18,15 @@
     "ffmpeg-kit",
     "ios"
   ],
-  "repository": "https://github.com/mygroove/ffmpeg-kit-private",
+  "repository": "https://github.com/mygroove/ffmpeg-kit",
   "author": "MyGroove <support@mygroove.com> (https://www.mygroove.com)",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/mygroove/ffmpeg-kit-private/issues"
+    "url": "https://github.com/mygroove/ffmpeg-kit/issues"
   },
-  "homepage": "https://github.com/mygroove/ffmpeg-kit-private",
+  "homepage": "https://github.com/mygroove/ffmpeg-kit",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.7.0",
