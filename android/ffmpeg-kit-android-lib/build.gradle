@@ -11,8 +11,8 @@ android {
     defaultConfig {
         minSdk 24
         targetSdk 33
-        versionCode 240602
-        versionName "6.0.2"
+        versionCode 240603
+        versionName "6.0.3"
         project.archivesBaseName = "mygroove-ffmpeg-kit"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -55,7 +55,7 @@ publishing {
     release(MavenPublication) {
       groupId = 'com.mygroove'
       artifactId = 'ffmpeg-kit'
-      version = '6.0.2'
+      version = '6.0.3'
 
       afterEvaluate {
         from components.release
