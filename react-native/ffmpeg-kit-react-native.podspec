@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
   s.source_files      = '**/FFmpegKitReactNativeModule.m',
                        '**/FFmpegKitReactNativeModule.h'
-  s.dependency 'ffmpeg-kit-ios-https', "6.0.2"
+  s.dependency 'mygroove-ffmpeg-kit-ios-https', "6.0.2"
   s.ios.deployment_target = '12.1'
 end
