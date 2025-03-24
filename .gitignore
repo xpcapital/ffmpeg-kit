@@ -1,6 +1,6 @@
 /.tmp/
 /*.log
-/prebuilt/
+/prebuilt/*
 !/prebuilt/bundle-android-aar/
 !/prebuilt/bundle-apple-xcframework-ios/
 .DS_Store
