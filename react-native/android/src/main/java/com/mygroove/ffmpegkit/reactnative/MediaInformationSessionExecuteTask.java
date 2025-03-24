@@ -17,24 +17,26 @@
  * along with FFmpegKit.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.arthenica.ffmpegkit.reactnative;
+package com.mygroove.ffmpegkit.reactnative;
 
 import com.arthenica.ffmpegkit.FFmpegKitConfig;
-import com.arthenica.ffmpegkit.FFmpegSession;
+import com.arthenica.ffmpegkit.MediaInformationSession;
 import com.facebook.react.bridge.Promise;
 
-public class FFmpegSessionExecuteTask implements Runnable {
-  private final FFmpegSession ffmpegSession;
+public class MediaInformationSessionExecuteTask implements Runnable {
+  private final MediaInformationSession mediaInformationSession;
+  private final int timeout;
   private final Promise promise;
 
-  public FFmpegSessionExecuteTask(final FFmpegSession ffmpegSession, final Promise promise) {
-    this.ffmpegSession = ffmpegSession;
+  public MediaInformationSessionExecuteTask(final MediaInformationSession mediaInformationSession, final int timeout, final Promise promise) {
+    this.mediaInformationSession = mediaInformationSession;
+    this.timeout = timeout;
     this.promise = promise;
   }
 
   @Override
   public void run() {
-    FFmpegKitConfig.ffmpegExecute(ffmpegSession);
+    FFmpegKitConfig.getMediaInformationExecute(mediaInformationSession, timeout);
     promise.resolve(null);
   }
 }
