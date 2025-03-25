@@ -120,5 +120,5 @@ repositories {
 
 dependencies {
   api 'com.facebook.react:react-native:+'
-  implementation 'com.mygroove:ffmpeg-kit:6.0.5'
+  implementation 'com.mygroove:ffmpeg-kit:6.0.6'
 }
