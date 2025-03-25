@@ -13,7 +13,7 @@ android {
         targetSdk 33
         versionCode 240603
         versionName "6.0.3"
-        project.archivesBaseName = "mygroove-ffmpeg-kit"
+        project.archivesBaseName = "ffmpeg-kit"
         consumerProguardFiles "consumer-rules.pro"
     }
 
