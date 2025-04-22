@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc      = true
   s.static_framework  = true
 
-  s.source       = { :git => "https://github.com/my-groove/ffmpeg-kit.git", :tag => "react.native.v#{s.version}-xpcapital" }
+  s.source       = { :git => "https://github.com/xpcapital/ffmpeg-kit.git", :tag => "react.native.v#{s.version}-xpcapital" }
 
   s.dependency "React-Core"
 
