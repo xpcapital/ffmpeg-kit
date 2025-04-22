@@ -53,7 +53,7 @@ android {
 publishing {
   publications {
     release(MavenPublication) {
-      groupId = 'com.mygroove'
+      groupId = 'com.xpcapital'
       artifactId = 'ffmpeg-kit'
       version = '6.0.6'
 

@@ -1,6 +1,6 @@
 # Build and Release
 
-For MyGroove we only publish one package per platform instead of multiple variants including different sets of libraries. We only need the Non-GPL HTTPS variant of `ffmpeg-kit`.
+For Xpcapital we only publish one package per platform instead of multiple variants including different sets of libraries. We only need the Non-GPL HTTPS variant of `ffmpeg-kit`.
 
 We use the Github Package Registry to consume the binaries privately. Therefore the person publishing the package will need to setup the necessary credentials for GitHub first.
 
@@ -14,7 +14,7 @@ For fetching packages from the GitHub Package Registry, we need to create a pers
 
   ```bash
   //npm.pkg.github.com/:_authToken=<YOUR_PERSONAL_ACCESS_TOKEN>
-  @my-groove:registry=https://npm.pkg.github.com/
+  @xpcapital:registry=https://npm.pkg.github.com/
   ```
 
 - For Gradle, add the following to `~/gradle.properties`:
@@ -26,10 +26,10 @@ For fetching packages from the GitHub Package Registry, we need to create a pers
 
 ## Private CocoaPods repository
 
-Add private MyGroove CocoaPods repo:
+Add private xpcapital CocoaPods repo:
 
 ```bash
-pod repo add MY_GROOVE git@github.com:my-groove/CocoaPodsSpecs.git
+pod repo add xpcapital-ffmpeg-kit-ios-https git@github.com:xpcapital/CocoaPodsSpecs.git
 ```
 
 ## iOS
@@ -47,13 +47,13 @@ After the command succeeded, there should be a `bundle-apple-xcframework-ios` fo
 Lint podspec and test if it's valid.
 
 ```bash
-pod spec lint mygroove-ffmpeg-kit-ios-https.podspec
+pod spec lint xpcapital-ffmpeg-kit-ios-https.podspec
 ```
 
 Push pod to private registry:
 
 ```bash
-pod repo push MY_GROOVE mygroove-ffmpeg-kit-ios-https.podspec
+pod repo push xpcapital-ffmpeg-kit-ios-https xpcapital-ffmpeg-kit-ios-https.podspec
 ```
 
 ## Android
